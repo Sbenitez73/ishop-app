@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB192A4B2BED8E5600DF9088 /* ProductListRepositoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB192A4A2BED8E5600DF9088 /* ProductListRepositoryType.swift */; };
+		CB192A4D2BED8E8200DF9088 /* ProductDomainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB192A4C2BED8E8200DF9088 /* ProductDomainError.swift */; };
+		CB192A512BED942800DF9088 /* RatingDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB192A502BED942800DF9088 /* RatingDTO.swift */; };
+		CB192A532BED943E00DF9088 /* ProductDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB192A522BED943E00DF9088 /* ProductDTO.swift */; };
+		CB192A562BED948D00DF9088 /* HTTPClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB192A552BED948D00DF9088 /* HTTPClientError.swift */; };
+		CB192A582BED94CE00DF9088 /* APIDataSourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB192A572BED94CE00DF9088 /* APIDataSourceType.swift */; };
+		CB192A5A2BED9B9000DF9088 /* APIProductDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB192A592BED9B9000DF9088 /* APIProductDataSource.swift */; };
 		CB6CD7C52BE7F1F200DD4CEC /* IshopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6CD7C42BE7F1F200DD4CEC /* IshopApp.swift */; };
 		CB6CD7C72BE7F1F200DD4CEC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6CD7C62BE7F1F200DD4CEC /* ContentView.swift */; };
 		CB6CD7C92BE7F1F300DD4CEC /* ISAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB6CD7C82BE7F1F300DD4CEC /* ISAssets.xcassets */; };
@@ -15,7 +22,18 @@
 		CB6CD7E02BE7F1F300DD4CEC /* IshopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6CD7DF2BE7F1F300DD4CEC /* IshopUITests.swift */; };
 		CB6CD7E22BE7F1F300DD4CEC /* IshopUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6CD7E12BE7F1F300DD4CEC /* IshopUITestsLaunchTests.swift */; };
 		CB6CD7F32BE7F3B300DD4CEC /* ISSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6CD7F22BE7F3B300DD4CEC /* ISSignInView.swift */; };
-		CBAF3D112BE80C4D0011C02F /* ISTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAF3D102BE80C4D0011C02F /* ISTextField.swift */; };
+		CB86FB492BEAF1A40018762E /* ISProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB86FB482BEAF1A40018762E /* ISProductsView.swift */; };
+		CB86FB4B2BEAF2470018762E /* ISProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB86FB4A2BEAF2470018762E /* ISProductsViewModel.swift */; };
+		CB86FB4D2BEAF30F0018762E /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB86FB4C2BEAF30F0018762E /* Product.swift */; };
+		CB86FB4F2BEAF3DA0018762E /* Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB86FB4E2BEAF3DA0018762E /* Rating.swift */; };
+		CB87E97D2BEB0326009A6DEA /* GetProductList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB87E97C2BEB0326009A6DEA /* GetProductList.swift */; };
+		CB87E9872BEB0655009A6DEA /* ProductRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB87E9862BEB0655009A6DEA /* ProductRepository.swift */; };
+		CBE0F9322BE9B12400F5FFB0 /* IshopAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE0F9282BE9B12400F5FFB0 /* IshopAuth.framework */; };
+		CBE0F9392BE9B12400F5FFB0 /* IshopAuthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE0F9382BE9B12400F5FFB0 /* IshopAuthTests.swift */; };
+		CBE0F93D2BE9B12400F5FFB0 /* IshopAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE0F9282BE9B12400F5FFB0 /* IshopAuth.framework */; };
+		CBE0F93E2BE9B12400F5FFB0 /* IshopAuth.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CBE0F9282BE9B12400F5FFB0 /* IshopAuth.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CBE0F9492BE9B1E200F5FFB0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CBE0F9482BE9B1E200F5FFB0 /* Alamofire */; };
+		CBE0F94B2BE9B28100F5FFB0 /* AuthMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE0F94A2BE9B28100F5FFB0 /* AuthMethod.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,9 +51,51 @@
 			remoteGlobalIDString = CB6CD7C02BE7F1F200DD4CEC;
 			remoteInfo = Ishop;
 		};
+		CBE0F9332BE9B12400F5FFB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB6CD7B92BE7F1F200DD4CEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBE0F9272BE9B12400F5FFB0;
+			remoteInfo = IshopAuth;
+		};
+		CBE0F9352BE9B12400F5FFB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB6CD7B92BE7F1F200DD4CEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB6CD7C02BE7F1F200DD4CEC;
+			remoteInfo = Ishop;
+		};
+		CBE0F93B2BE9B12400F5FFB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB6CD7B92BE7F1F200DD4CEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBE0F9272BE9B12400F5FFB0;
+			remoteInfo = IshopAuth;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CBE0F93F2BE9B12400F5FFB0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CBE0F93E2BE9B12400F5FFB0 /* IshopAuth.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		CB192A4A2BED8E5600DF9088 /* ProductListRepositoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListRepositoryType.swift; sourceTree = "<group>"; };
+		CB192A4C2BED8E8200DF9088 /* ProductDomainError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDomainError.swift; sourceTree = "<group>"; };
+		CB192A502BED942800DF9088 /* RatingDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingDTO.swift; sourceTree = "<group>"; };
+		CB192A522BED943E00DF9088 /* ProductDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDTO.swift; sourceTree = "<group>"; };
+		CB192A552BED948D00DF9088 /* HTTPClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientError.swift; sourceTree = "<group>"; };
+		CB192A572BED94CE00DF9088 /* APIDataSourceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDataSourceType.swift; sourceTree = "<group>"; };
+		CB192A592BED9B9000DF9088 /* APIProductDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProductDataSource.swift; sourceTree = "<group>"; };
 		CB6CD7C12BE7F1F200DD4CEC /* Ishop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ishop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB6CD7C42BE7F1F200DD4CEC /* IshopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IshopApp.swift; sourceTree = "<group>"; };
 		CB6CD7C62BE7F1F200DD4CEC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -47,7 +107,16 @@
 		CB6CD7DF2BE7F1F300DD4CEC /* IshopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IshopUITests.swift; sourceTree = "<group>"; };
 		CB6CD7E12BE7F1F300DD4CEC /* IshopUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IshopUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CB6CD7F22BE7F3B300DD4CEC /* ISSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSignInView.swift; sourceTree = "<group>"; };
-		CBAF3D102BE80C4D0011C02F /* ISTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISTextField.swift; sourceTree = "<group>"; };
+		CB86FB482BEAF1A40018762E /* ISProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISProductsView.swift; sourceTree = "<group>"; };
+		CB86FB4A2BEAF2470018762E /* ISProductsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISProductsViewModel.swift; sourceTree = "<group>"; };
+		CB86FB4C2BEAF30F0018762E /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		CB86FB4E2BEAF3DA0018762E /* Rating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
+		CB87E97C2BEB0326009A6DEA /* GetProductList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProductList.swift; sourceTree = "<group>"; };
+		CB87E9862BEB0655009A6DEA /* ProductRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRepository.swift; sourceTree = "<group>"; };
+		CBE0F9282BE9B12400F5FFB0 /* IshopAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IshopAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBE0F9312BE9B12400F5FFB0 /* IshopAuthTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IshopAuthTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBE0F9382BE9B12400F5FFB0 /* IshopAuthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IshopAuthTests.swift; sourceTree = "<group>"; };
+		CBE0F94A2BE9B28100F5FFB0 /* AuthMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthMethod.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBE0F93D2BE9B12400F5FFB0 /* IshopAuth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,16 +142,69 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CBE0F9252BE9B12400F5FFB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBE0F9492BE9B1E200F5FFB0 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBE0F92E2BE9B12400F5FFB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBE0F9322BE9B12400F5FFB0 /* IshopAuth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB192A492BED8E3900DF9088 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				CB192A4A2BED8E5600DF9088 /* ProductListRepositoryType.swift */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		CB192A4E2BED906C00DF9088 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CB192A4F2BED941900DF9088 /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				CB192A502BED942800DF9088 /* RatingDTO.swift */,
+				CB192A522BED943E00DF9088 /* ProductDTO.swift */,
+			);
+			path = DTOs;
+			sourceTree = "<group>";
+		};
+		CB192A542BED947500DF9088 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CB192A552BED948D00DF9088 /* HTTPClientError.swift */,
+				CB192A572BED94CE00DF9088 /* APIDataSourceType.swift */,
+				CB192A592BED9B9000DF9088 /* APIProductDataSource.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		CB6CD7B82BE7F1F200DD4CEC = {
 			isa = PBXGroup;
 			children = (
 				CB6CD7C32BE7F1F200DD4CEC /* Ishop */,
 				CB6CD7D42BE7F1F300DD4CEC /* IshopTests */,
 				CB6CD7DE2BE7F1F300DD4CEC /* IshopUITests */,
+				CBE0F9292BE9B12400F5FFB0 /* IshopAuth */,
+				CBE0F9372BE9B12400F5FFB0 /* IshopAuthTests */,
 				CB6CD7C22BE7F1F200DD4CEC /* Products */,
+				CBE0F9472BE9B1E200F5FFB0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,6 +214,8 @@
 				CB6CD7C12BE7F1F200DD4CEC /* Ishop.app */,
 				CB6CD7D12BE7F1F300DD4CEC /* IshopTests.xctest */,
 				CB6CD7DB2BE7F1F300DD4CEC /* IshopUITests.xctest */,
+				CBE0F9282BE9B12400F5FFB0 /* IshopAuth.framework */,
+				CBE0F9312BE9B12400F5FFB0 /* IshopAuthTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,8 +224,9 @@
 			isa = PBXGroup;
 			children = (
 				CB6CD7EF2BE7F26900DD4CEC /* Core */,
-				CB6CD7EE2BE7F24200DD4CEC /* SupportingFiles */,
-				CB6CD7CA2BE7F1F300DD4CEC /* Preview Content */,
+				CBE0F94D2BE9B6FD00F5FFB0 /* Data */,
+				CBE0F94E2BE9B70700F5FFB0 /* Domain */,
+				CBE0F94F2BE9B70D00F5FFB0 /* Presentation */,
 			);
 			path = Ishop;
 			sourceTree = "<group>";
@@ -143,21 +269,109 @@
 		CB6CD7EF2BE7F26900DD4CEC /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				CBAF3D0F2BE80C3F0011C02F /* Modifiers */,
-				CB6CD7F02BE7F33E00DD4CEC /* Features */,
 			);
 			path = Core;
 			sourceTree = "<group>";
 		};
-		CB6CD7F02BE7F33E00DD4CEC /* Features */ = {
+		CB86FB472BEAF1550018762E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CB6CD7F12BE7F39F00DD4CEC /* SignIn */,
+				CB86FB482BEAF1A40018762E /* ISProductsView.swift */,
+				CB86FB4A2BEAF2470018762E /* ISProductsViewModel.swift */,
 			);
-			path = Features;
+			path = Products;
 			sourceTree = "<group>";
 		};
-		CB6CD7F12BE7F39F00DD4CEC /* SignIn */ = {
+		CB87E9852BEB0648009A6DEA /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				CB87E9862BEB0655009A6DEA /* ProductRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		CBE0F9292BE9B12400F5FFB0 /* IshopAuth */ = {
+			isa = PBXGroup;
+			children = (
+				CBE0F94C2BE9B30100F5FFB0 /* Authenticators */,
+				CBE0F94A2BE9B28100F5FFB0 /* AuthMethod.swift */,
+			);
+			path = IshopAuth;
+			sourceTree = "<group>";
+		};
+		CBE0F9372BE9B12400F5FFB0 /* IshopAuthTests */ = {
+			isa = PBXGroup;
+			children = (
+				CBE0F9382BE9B12400F5FFB0 /* IshopAuthTests.swift */,
+			);
+			path = IshopAuthTests;
+			sourceTree = "<group>";
+		};
+		CBE0F9472BE9B1E200F5FFB0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CBE0F94C2BE9B30100F5FFB0 /* Authenticators */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Authenticators;
+			sourceTree = "<group>";
+		};
+		CBE0F94D2BE9B6FD00F5FFB0 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CB192A542BED947500DF9088 /* Networking */,
+				CB192A4F2BED941900DF9088 /* DTOs */,
+				CB192A4E2BED906C00DF9088 /* Model */,
+				CB87E9852BEB0648009A6DEA /* Repositories */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		CBE0F94E2BE9B70700F5FFB0 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				CB192A492BED8E3900DF9088 /* Interfaces */,
+				CBE0F9522BE9B7D500F5FFB0 /* UseCases */,
+				CBE0F9502BE9B7BA00F5FFB0 /* Entities */,
+				CB192A4C2BED8E8200DF9088 /* ProductDomainError.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		CBE0F94F2BE9B70D00F5FFB0 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				CB86FB472BEAF1550018762E /* Products */,
+				CBE0F9532BE9B7EC00F5FFB0 /* SignIn */,
+				CB6CD7EE2BE7F24200DD4CEC /* SupportingFiles */,
+				CB6CD7CA2BE7F1F300DD4CEC /* Preview Content */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		CBE0F9502BE9B7BA00F5FFB0 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				CB86FB4C2BEAF30F0018762E /* Product.swift */,
+				CB86FB4E2BEAF3DA0018762E /* Rating.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		CBE0F9522BE9B7D500F5FFB0 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				CB87E97C2BEB0326009A6DEA /* GetProductList.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		CBE0F9532BE9B7EC00F5FFB0 /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
 				CB6CD7F22BE7F3B300DD4CEC /* ISSignInView.swift */,
@@ -165,15 +379,17 @@
 			path = SignIn;
 			sourceTree = "<group>";
 		};
-		CBAF3D0F2BE80C3F0011C02F /* Modifiers */ = {
-			isa = PBXGroup;
-			children = (
-				CBAF3D102BE80C4D0011C02F /* ISTextField.swift */,
-			);
-			path = Modifiers;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CBE0F9232BE9B12400F5FFB0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		CB6CD7C02BE7F1F200DD4CEC /* Ishop */ = {
@@ -183,10 +399,12 @@
 				CB6CD7BD2BE7F1F200DD4CEC /* Sources */,
 				CB6CD7BE2BE7F1F200DD4CEC /* Frameworks */,
 				CB6CD7BF2BE7F1F200DD4CEC /* Resources */,
+				CBE0F93F2BE9B12400F5FFB0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CBE0F93C2BE9B12400F5FFB0 /* PBXTargetDependency */,
 			);
 			name = Ishop;
 			productName = Ishop;
@@ -229,6 +447,46 @@
 			productReference = CB6CD7DB2BE7F1F300DD4CEC /* IshopUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		CBE0F9272BE9B12400F5FFB0 /* IshopAuth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBE0F9442BE9B12400F5FFB0 /* Build configuration list for PBXNativeTarget "IshopAuth" */;
+			buildPhases = (
+				CBE0F9232BE9B12400F5FFB0 /* Headers */,
+				CBE0F9242BE9B12400F5FFB0 /* Sources */,
+				CBE0F9252BE9B12400F5FFB0 /* Frameworks */,
+				CBE0F9262BE9B12400F5FFB0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IshopAuth;
+			packageProductDependencies = (
+				CBE0F9482BE9B1E200F5FFB0 /* Alamofire */,
+			);
+			productName = IshopAuth;
+			productReference = CBE0F9282BE9B12400F5FFB0 /* IshopAuth.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CBE0F9302BE9B12400F5FFB0 /* IshopAuthTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBE0F9452BE9B12400F5FFB0 /* Build configuration list for PBXNativeTarget "IshopAuthTests" */;
+			buildPhases = (
+				CBE0F92D2BE9B12400F5FFB0 /* Sources */,
+				CBE0F92E2BE9B12400F5FFB0 /* Frameworks */,
+				CBE0F92F2BE9B12400F5FFB0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBE0F9342BE9B12400F5FFB0 /* PBXTargetDependency */,
+				CBE0F9362BE9B12400F5FFB0 /* PBXTargetDependency */,
+			);
+			name = IshopAuthTests;
+			productName = IshopAuthTests;
+			productReference = CBE0F9312BE9B12400F5FFB0 /* IshopAuthTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -250,6 +508,14 @@
 						CreatedOnToolsVersion = 15.3;
 						TestTargetID = CB6CD7C02BE7F1F200DD4CEC;
 					};
+					CBE0F9272BE9B12400F5FFB0 = {
+						CreatedOnToolsVersion = 15.3;
+						LastSwiftMigration = 1530;
+					};
+					CBE0F9302BE9B12400F5FFB0 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = CB6CD7C02BE7F1F200DD4CEC;
+					};
 				};
 			};
 			buildConfigurationList = CB6CD7BC2BE7F1F200DD4CEC /* Build configuration list for PBXProject "Ishop" */;
@@ -261,6 +527,9 @@
 				Base,
 			);
 			mainGroup = CB6CD7B82BE7F1F200DD4CEC;
+			packageReferences = (
+				CBE0F9462BE9B1D600F5FFB0 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = CB6CD7C22BE7F1F200DD4CEC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -268,6 +537,8 @@
 				CB6CD7C02BE7F1F200DD4CEC /* Ishop */,
 				CB6CD7D02BE7F1F300DD4CEC /* IshopTests */,
 				CB6CD7DA2BE7F1F300DD4CEC /* IshopUITests */,
+				CBE0F9272BE9B12400F5FFB0 /* IshopAuth */,
+				CBE0F9302BE9B12400F5FFB0 /* IshopAuthTests */,
 			);
 		};
 /* End PBXProject section */
@@ -296,6 +567,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CBE0F9262BE9B12400F5FFB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBE0F92F2BE9B12400F5FFB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -304,9 +589,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB6CD7C72BE7F1F200DD4CEC /* ContentView.swift in Sources */,
-				CBAF3D112BE80C4D0011C02F /* ISTextField.swift in Sources */,
+				CB192A4B2BED8E5600DF9088 /* ProductListRepositoryType.swift in Sources */,
+				CB87E9872BEB0655009A6DEA /* ProductRepository.swift in Sources */,
 				CB6CD7F32BE7F3B300DD4CEC /* ISSignInView.swift in Sources */,
+				CB86FB4B2BEAF2470018762E /* ISProductsViewModel.swift in Sources */,
+				CB87E97D2BEB0326009A6DEA /* GetProductList.swift in Sources */,
+				CB192A582BED94CE00DF9088 /* APIDataSourceType.swift in Sources */,
+				CB86FB492BEAF1A40018762E /* ISProductsView.swift in Sources */,
+				CB192A512BED942800DF9088 /* RatingDTO.swift in Sources */,
+				CB192A562BED948D00DF9088 /* HTTPClientError.swift in Sources */,
+				CB192A532BED943E00DF9088 /* ProductDTO.swift in Sources */,
+				CB192A5A2BED9B9000DF9088 /* APIProductDataSource.swift in Sources */,
 				CB6CD7C52BE7F1F200DD4CEC /* IshopApp.swift in Sources */,
+				CB86FB4D2BEAF30F0018762E /* Product.swift in Sources */,
+				CB192A4D2BED8E8200DF9088 /* ProductDomainError.swift in Sources */,
+				CB86FB4F2BEAF3DA0018762E /* Rating.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +624,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CBE0F9242BE9B12400F5FFB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBE0F94B2BE9B28100F5FFB0 /* AuthMethod.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBE0F92D2BE9B12400F5FFB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBE0F9392BE9B12400F5FFB0 /* IshopAuthTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -339,6 +652,21 @@
 			isa = PBXTargetDependency;
 			target = CB6CD7C02BE7F1F200DD4CEC /* Ishop */;
 			targetProxy = CB6CD7DC2BE7F1F300DD4CEC /* PBXContainerItemProxy */;
+		};
+		CBE0F9342BE9B12400F5FFB0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBE0F9272BE9B12400F5FFB0 /* IshopAuth */;
+			targetProxy = CBE0F9332BE9B12400F5FFB0 /* PBXContainerItemProxy */;
+		};
+		CBE0F9362BE9B12400F5FFB0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB6CD7C02BE7F1F200DD4CEC /* Ishop */;
+			targetProxy = CBE0F9352BE9B12400F5FFB0 /* PBXContainerItemProxy */;
+		};
+		CBE0F93C2BE9B12400F5FFB0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBE0F9272BE9B12400F5FFB0 /* IshopAuth */;
+			targetProxy = CBE0F93B2BE9B12400F5FFB0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -465,11 +793,12 @@
 		CB6CD7E62BE7F1F300DD4CEC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Ishop/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Ishop/Presentation/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = iShop;
@@ -494,11 +823,12 @@
 		CB6CD7E72BE7F1F300DD4CEC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Ishop/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Ishop/Presentation/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = iShop;
@@ -592,6 +922,113 @@
 			};
 			name = Release;
 		};
+		CBE0F9402BE9B12400F5FFB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.overhub.IshopAuth;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CBE0F9412BE9B12400F5FFB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.overhub.IshopAuth;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CBE0F9422BE9B12400F5FFB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H8C9L4RHHV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.overhub.IshopAuthTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ishop.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Ishop";
+			};
+			name = Debug;
+		};
+		CBE0F9432BE9B12400F5FFB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H8C9L4RHHV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.overhub.IshopAuthTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ishop.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Ishop";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -631,7 +1068,44 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		CBE0F9442BE9B12400F5FFB0 /* Build configuration list for PBXNativeTarget "IshopAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBE0F9402BE9B12400F5FFB0 /* Debug */,
+				CBE0F9412BE9B12400F5FFB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBE0F9452BE9B12400F5FFB0 /* Build configuration list for PBXNativeTarget "IshopAuthTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBE0F9422BE9B12400F5FFB0 /* Debug */,
+				CBE0F9432BE9B12400F5FFB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CBE0F9462BE9B1D600F5FFB0 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CBE0F9482BE9B1E200F5FFB0 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CBE0F9462BE9B1D600F5FFB0 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CB6CD7B92BE7F1F200DD4CEC /* Project object */;
 }
