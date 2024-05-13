@@ -9,9 +9,9 @@ import Foundation
 
 class ProductRepository: ProductListRepositoryType {
     
-    private let apiDataSource: ApiDataSourceType
+    private let apiDataSource: APIDataSourceType
     
-    init(apiDataSource: ApiDataSourceType) {
+    init(apiDataSource: APIDataSourceType) {
         self.apiDataSource = apiDataSource
     }
     

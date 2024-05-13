@@ -7,8 +7,8 @@
 
 import Foundation
 
-protocol HTTPClient {
-    func makeRequest(endpoint: String) -> Result<Data, HTTPClientError>
+protocol HTTPClientType {
+    func makeRequest(endpoint: Endpoint) async -> Result<Data, HTTPClientError>
 }
 
 class APIProductDataSource: APIDataSourceType {
@@ -19,9 +19,8 @@ class APIProductDataSource: APIDataSourceType {
         self.httpClient = httpClient
     }
 
-    
     func getProductList() async -> Result<[ProductDTO], HTTPClientError> {
-        let result = httpClient.makeRequest(endpoint: "https://fakestoreapi.com/products")
+        let result = await httpClient.makeRequest(endpoint: Endpoint(method: .get))
         
         guard case .success(let data) = result else {
             guard case .failure(let error) = result else {
@@ -43,6 +42,12 @@ struct Endpoint {
     let path: String
     let queryParams: [String: Any]
     let method: HTTPMethod
+    
+    init(method: HTTPMethod, path: String? = nil, queryParams: [String: Any]? = nil ) {
+        self.path = path ?? APIConstant.PRODUCT_BASE_URL
+        self.queryParams = queryParams ?? [:]
+        self.method = method
+    }
 }
 
 enum HTTPMethod {

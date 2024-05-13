@@ -7,7 +7,11 @@
 
 import Foundation
 
-class GetProductList {
+protocol GetProductListType {
+    func execute() async -> Result<[Product], ProductDomainError>
+}
+
+class GetProductList: GetProductListType {
     private let repository: ProductListRepositoryType
     
     init(repository: ProductListRepositoryType) {

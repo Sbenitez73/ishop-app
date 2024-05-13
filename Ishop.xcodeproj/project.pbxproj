@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB18FF162BF127D3003AFC51 /* ProductListFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB18FF152BF127D3003AFC51 /* ProductListFactory.swift */; };
+		CB18FF1B2BF12BFD003AFC51 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB18FF1A2BF12BFD003AFC51 /* HTTPClient.swift */; };
 		CB192A4B2BED8E5600DF9088 /* ProductListRepositoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB192A4A2BED8E5600DF9088 /* ProductListRepositoryType.swift */; };
 		CB192A4D2BED8E8200DF9088 /* ProductDomainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB192A4C2BED8E8200DF9088 /* ProductDomainError.swift */; };
 		CB192A512BED942800DF9088 /* RatingDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB192A502BED942800DF9088 /* RatingDTO.swift */; };
@@ -14,6 +16,7 @@
 		CB192A562BED948D00DF9088 /* HTTPClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB192A552BED948D00DF9088 /* HTTPClientError.swift */; };
 		CB192A582BED94CE00DF9088 /* APIDataSourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB192A572BED94CE00DF9088 /* APIDataSourceType.swift */; };
 		CB192A5A2BED9B9000DF9088 /* APIProductDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB192A592BED9B9000DF9088 /* APIProductDataSource.swift */; };
+		CB63BBA22BF1740D00B8624F /* APIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB63BBA12BF1740D00B8624F /* APIConstant.swift */; };
 		CB6CD7C52BE7F1F200DD4CEC /* IshopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6CD7C42BE7F1F200DD4CEC /* IshopApp.swift */; };
 		CB6CD7C72BE7F1F200DD4CEC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6CD7C62BE7F1F200DD4CEC /* ContentView.swift */; };
 		CB6CD7C92BE7F1F300DD4CEC /* ISAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB6CD7C82BE7F1F300DD4CEC /* ISAssets.xcassets */; };
@@ -29,11 +32,9 @@
 		CB87E97D2BEB0326009A6DEA /* GetProductList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB87E97C2BEB0326009A6DEA /* GetProductList.swift */; };
 		CB87E9872BEB0655009A6DEA /* ProductRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB87E9862BEB0655009A6DEA /* ProductRepository.swift */; };
 		CBE0F9322BE9B12400F5FFB0 /* IshopAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE0F9282BE9B12400F5FFB0 /* IshopAuth.framework */; };
-		CBE0F9392BE9B12400F5FFB0 /* IshopAuthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE0F9382BE9B12400F5FFB0 /* IshopAuthTests.swift */; };
 		CBE0F93D2BE9B12400F5FFB0 /* IshopAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE0F9282BE9B12400F5FFB0 /* IshopAuth.framework */; };
 		CBE0F93E2BE9B12400F5FFB0 /* IshopAuth.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CBE0F9282BE9B12400F5FFB0 /* IshopAuth.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CBE0F9492BE9B1E200F5FFB0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CBE0F9482BE9B1E200F5FFB0 /* Alamofire */; };
-		CBE0F94B2BE9B28100F5FFB0 /* AuthMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE0F94A2BE9B28100F5FFB0 /* AuthMethod.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CB18FF152BF127D3003AFC51 /* ProductListFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListFactory.swift; sourceTree = "<group>"; };
+		CB18FF1A2BF12BFD003AFC51 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		CB192A4A2BED8E5600DF9088 /* ProductListRepositoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListRepositoryType.swift; sourceTree = "<group>"; };
 		CB192A4C2BED8E8200DF9088 /* ProductDomainError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDomainError.swift; sourceTree = "<group>"; };
 		CB192A502BED942800DF9088 /* RatingDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingDTO.swift; sourceTree = "<group>"; };
@@ -96,6 +99,7 @@
 		CB192A552BED948D00DF9088 /* HTTPClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientError.swift; sourceTree = "<group>"; };
 		CB192A572BED94CE00DF9088 /* APIDataSourceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDataSourceType.swift; sourceTree = "<group>"; };
 		CB192A592BED9B9000DF9088 /* APIProductDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProductDataSource.swift; sourceTree = "<group>"; };
+		CB63BBA12BF1740D00B8624F /* APIConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstant.swift; sourceTree = "<group>"; };
 		CB6CD7C12BE7F1F200DD4CEC /* Ishop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ishop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB6CD7C42BE7F1F200DD4CEC /* IshopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IshopApp.swift; sourceTree = "<group>"; };
 		CB6CD7C62BE7F1F200DD4CEC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -115,8 +119,6 @@
 		CB87E9862BEB0655009A6DEA /* ProductRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRepository.swift; sourceTree = "<group>"; };
 		CBE0F9282BE9B12400F5FFB0 /* IshopAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IshopAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBE0F9312BE9B12400F5FFB0 /* IshopAuthTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IshopAuthTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CBE0F9382BE9B12400F5FFB0 /* IshopAuthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IshopAuthTests.swift; sourceTree = "<group>"; };
-		CBE0F94A2BE9B28100F5FFB0 /* AuthMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthMethod.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB18FF142BF127B9003AFC51 /* Composition Root */ = {
+			isa = PBXGroup;
+			children = (
+				CB18FF152BF127D3003AFC51 /* ProductListFactory.swift */,
+			);
+			path = "Composition Root";
+			sourceTree = "<group>";
+		};
+		CB18FF172BF12B07003AFC51 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				CB18FF182BF12B14003AFC51 /* Networking */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		CB18FF182BF12B14003AFC51 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CB18FF1A2BF12BFD003AFC51 /* HTTPClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		CB192A492BED8E3900DF9088 /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,14 +221,20 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
+		CB63BBA02BF173F500B8624F /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				CB63BBA12BF1740D00B8624F /* APIConstant.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		CB6CD7B82BE7F1F200DD4CEC = {
 			isa = PBXGroup;
 			children = (
 				CB6CD7C32BE7F1F200DD4CEC /* Ishop */,
 				CB6CD7D42BE7F1F300DD4CEC /* IshopTests */,
 				CB6CD7DE2BE7F1F300DD4CEC /* IshopUITests */,
-				CBE0F9292BE9B12400F5FFB0 /* IshopAuth */,
-				CBE0F9372BE9B12400F5FFB0 /* IshopAuthTests */,
 				CB6CD7C22BE7F1F200DD4CEC /* Products */,
 				CBE0F9472BE9B1E200F5FFB0 /* Frameworks */,
 			);
@@ -223,10 +255,12 @@
 		CB6CD7C32BE7F1F200DD4CEC /* Ishop */ = {
 			isa = PBXGroup;
 			children = (
-				CB6CD7EF2BE7F26900DD4CEC /* Core */,
-				CBE0F94D2BE9B6FD00F5FFB0 /* Data */,
+				CBE0F94D2BE9B6FD00F5FFB0 /* Application */,
+				CB18FF142BF127B9003AFC51 /* Composition Root */,
 				CBE0F94E2BE9B70700F5FFB0 /* Domain */,
+				CB18FF172BF12B07003AFC51 /* Infrastructure */,
 				CBE0F94F2BE9B70D00F5FFB0 /* Presentation */,
+				CB9DCB102BF04ACC00ECC5E6 /* UI */,
 			);
 			path = Ishop;
 			sourceTree = "<group>";
@@ -266,17 +300,9 @@
 			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
-		CB6CD7EF2BE7F26900DD4CEC /* Core */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
 		CB86FB472BEAF1550018762E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CB86FB482BEAF1A40018762E /* ISProductsView.swift */,
 				CB86FB4A2BEAF2470018762E /* ISProductsViewModel.swift */,
 			);
 			path = Products;
@@ -290,21 +316,15 @@
 			path = Repositories;
 			sourceTree = "<group>";
 		};
-		CBE0F9292BE9B12400F5FFB0 /* IshopAuth */ = {
+		CB9DCB102BF04ACC00ECC5E6 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				CBE0F94C2BE9B30100F5FFB0 /* Authenticators */,
-				CBE0F94A2BE9B28100F5FFB0 /* AuthMethod.swift */,
+				CB6CD7CA2BE7F1F300DD4CEC /* Preview Content */,
+				CB6CD7EE2BE7F24200DD4CEC /* SupportingFiles */,
+				CB6CD7F22BE7F3B300DD4CEC /* ISSignInView.swift */,
+				CB86FB482BEAF1A40018762E /* ISProductsView.swift */,
 			);
-			path = IshopAuth;
-			sourceTree = "<group>";
-		};
-		CBE0F9372BE9B12400F5FFB0 /* IshopAuthTests */ = {
-			isa = PBXGroup;
-			children = (
-				CBE0F9382BE9B12400F5FFB0 /* IshopAuthTests.swift */,
-			);
-			path = IshopAuthTests;
+			path = UI;
 			sourceTree = "<group>";
 		};
 		CBE0F9472BE9B1E200F5FFB0 /* Frameworks */ = {
@@ -314,22 +334,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CBE0F94C2BE9B30100F5FFB0 /* Authenticators */ = {
+		CBE0F94D2BE9B6FD00F5FFB0 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			path = Authenticators;
-			sourceTree = "<group>";
-		};
-		CBE0F94D2BE9B6FD00F5FFB0 /* Data */ = {
-			isa = PBXGroup;
-			children = (
+				CB63BBA02BF173F500B8624F /* Constants */,
 				CB192A542BED947500DF9088 /* Networking */,
 				CB192A4F2BED941900DF9088 /* DTOs */,
 				CB192A4E2BED906C00DF9088 /* Model */,
 				CB87E9852BEB0648009A6DEA /* Repositories */,
 			);
-			path = Data;
+			path = Application;
 			sourceTree = "<group>";
 		};
 		CBE0F94E2BE9B70700F5FFB0 /* Domain */ = {
@@ -348,8 +362,6 @@
 			children = (
 				CB86FB472BEAF1550018762E /* Products */,
 				CBE0F9532BE9B7EC00F5FFB0 /* SignIn */,
-				CB6CD7EE2BE7F24200DD4CEC /* SupportingFiles */,
-				CB6CD7CA2BE7F1F300DD4CEC /* Preview Content */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -374,7 +386,6 @@
 		CBE0F9532BE9B7EC00F5FFB0 /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
-				CB6CD7F22BE7F3B300DD4CEC /* ISSignInView.swift */,
 			);
 			path = SignIn;
 			sourceTree = "<group>";
@@ -593,14 +604,17 @@
 				CB87E9872BEB0655009A6DEA /* ProductRepository.swift in Sources */,
 				CB6CD7F32BE7F3B300DD4CEC /* ISSignInView.swift in Sources */,
 				CB86FB4B2BEAF2470018762E /* ISProductsViewModel.swift in Sources */,
+				CB63BBA22BF1740D00B8624F /* APIConstant.swift in Sources */,
 				CB87E97D2BEB0326009A6DEA /* GetProductList.swift in Sources */,
 				CB192A582BED94CE00DF9088 /* APIDataSourceType.swift in Sources */,
 				CB86FB492BEAF1A40018762E /* ISProductsView.swift in Sources */,
+				CB18FF162BF127D3003AFC51 /* ProductListFactory.swift in Sources */,
 				CB192A512BED942800DF9088 /* RatingDTO.swift in Sources */,
 				CB192A562BED948D00DF9088 /* HTTPClientError.swift in Sources */,
 				CB192A532BED943E00DF9088 /* ProductDTO.swift in Sources */,
 				CB192A5A2BED9B9000DF9088 /* APIProductDataSource.swift in Sources */,
 				CB6CD7C52BE7F1F200DD4CEC /* IshopApp.swift in Sources */,
+				CB18FF1B2BF12BFD003AFC51 /* HTTPClient.swift in Sources */,
 				CB86FB4D2BEAF30F0018762E /* Product.swift in Sources */,
 				CB192A4D2BED8E8200DF9088 /* ProductDomainError.swift in Sources */,
 				CB86FB4F2BEAF3DA0018762E /* Rating.swift in Sources */,
@@ -628,7 +642,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBE0F94B2BE9B28100F5FFB0 /* AuthMethod.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -636,7 +649,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBE0F9392BE9B12400F5FFB0 /* IshopAuthTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -793,12 +805,11 @@
 		CB6CD7E62BE7F1F300DD4CEC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Ishop/Presentation/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Ishop/UI/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = iShop;
@@ -823,12 +834,11 @@
 		CB6CD7E72BE7F1F300DD4CEC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Ishop/Presentation/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Ishop/UI/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = iShop;
@@ -996,7 +1006,6 @@
 		CBE0F9422BE9B12400F5FFB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = H8C9L4RHHV;
@@ -1014,7 +1023,6 @@
 		CBE0F9432BE9B12400F5FFB0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = H8C9L4RHHV;
