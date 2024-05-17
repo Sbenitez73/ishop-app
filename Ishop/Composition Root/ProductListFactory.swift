@@ -9,7 +9,7 @@ import Foundation
 
 class ProductListFactory {
     static func create() -> ISProductsViewModel {
-        ISProductsViewModel(getProductUseCase: createUseCase())
+        return ISProductsViewModel(getProductUseCase: createUseCase())
     }
     
     private static func createUseCase() -> GetProductListType {

@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct ProductPresentableItem {
+struct ProductPresentableItem: Identifiable, Equatable {
     let id: String
     let title: String
     let description: String
@@ -17,7 +17,7 @@ struct ProductPresentableItem {
     let image: String
     let rating: RatingPresentableItem
     
-    struct RatingPresentableItem {
+    struct RatingPresentableItem: Equatable {
         let count: String
         let rate: String
     }
@@ -36,6 +36,7 @@ struct ProductPresentableItem {
 
 class ISProductsViewModel: ObservableObject {
     @Published var products: [ProductPresentableItem] = []
+    @Published var loading: Bool = false
     
     private let getProductsList: GetProductListType
     
@@ -44,15 +45,19 @@ class ISProductsViewModel: ObservableObject {
     }
     
     public func retrieveProducts() -> Void {
+        self.loading = true
         Task {
             let result = await getProductsList.execute()
             let productsList = try? result.get().map { ProductPresentableItem(domainProduct: $0) }
             
-            guard let productsList = productsList else {
-                return
+            Task { @MainActor in
+                self.loading = false
+                guard let productsList = productsList else {
+                    return
+                }
+                
+                self.products = productsList
             }
-            
-            self.products = productsList
         }
         
     }

@@ -19,7 +19,7 @@ class ProductRepository: ProductListRepositoryType {
         let result = await apiDataSource.getProductList()
         
         guard let productList = try? result.get() else {
-            guard case .failure(let error) = result else {
+            guard case .failure(_) = result else {
                 return .failure(.generic)
             }
             

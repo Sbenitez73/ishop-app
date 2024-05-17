@@ -8,17 +8,28 @@
 import SwiftUI
 
 struct ISProductsView: View {
-    
-    @StateObject var viewModel = ProductListFactory.create()
-    
+    @ObservedObject var viewModel = ProductListFactory.create()
+    private let gridItems = [GridItem(.flexible()), GridItem(.flexible())]
     
     var body: some View {
-        Text("Hello, Products!")
-            .onAppear {
-                viewModel.retrieveProducts()
+        VStack {
+            if viewModel.loading {
+                ProgressView()
+            } else {
+                ScrollView {
+                    LazyVGrid(columns: gridItems, spacing: 20) {
+                        ForEach(viewModel.products) { product in
+                            ISProductItem(product: product)
+                        }
+                    }
+                }
             }
+        }
+        .onAppear {
+            viewModel.retrieveProducts()
+        }
+        .background(Color("Background"))
     }
-    
 }
 
 #Preview {
